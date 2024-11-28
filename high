@@ -1,0 +1,33 @@
+// TRANSPOSE
+
+#include<stdio.h>
+void main()
+{
+    int a[10][10],b[10][10],r,c;
+    printf("enter the mat size: ");
+    scanf("%d%d",&r,&c);
+    printf("enter the mat value: ");
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+      for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+           b[j][i]=a[i][j];
+        }
+    }
+    printf("transpose\n");
+      for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+           printf("%d ",b[i][j]);
+        }
+        printf("\n");
+    }
+}

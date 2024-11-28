@@ -1,0 +1,27 @@
+/*  given an array ,arr of n integers and an integer element x find whether element x
+is present in the array. return the index of the first occurrence of x in the array 
+,or -1 if it doesnt exist   */
+
+#include<stdio.h>
+void main()
+{
+    int arr[80],n,x;
+    printf("Enter the value of X: ");
+    scanf("%d",&x);
+    printf("Enter the array sixe: ");
+    scanf("%d",&x);
+    printf("Enter the array elements: ");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    if(arr[x-1]==x)
+    {
+        printf("%d",arr[x-1]);
+    }
+    else
+    {
+        printf("-1");
+    }
+}
+
